@@ -1,0 +1,14 @@
+{
+  "project": "CampusConnect",
+  "course": "CSE 413",
+  "group": 12,
+  "campusCode": "CAM-JAC-12",
+  "campusName": "Kano Campus",
+  "primaryColor": "#263238",
+  "secondaryColor": "#FF9100",
+  "apiBasePath": "/api/v1/jac/",
+  "offlineDatabase": "SQLite",
+  "backend": "Firebase",
+  "uniqueConstraint": "Inactive session timeout = 5 minutes",
+  "version": "1.0.0"
+}

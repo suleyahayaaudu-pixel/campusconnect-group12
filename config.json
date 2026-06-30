@@ -1,0 +1,16 @@
+{
+  "campus_code": "CAM-JAC-12,
+  "primary_color": "#01579B",
+  "secondary_color": "#FF4081",
+  "api_base_path": "/api/v1/jac/",
+  "unique_constraint": "typing_indicator_timeout_4s",
+  "group_number": 20,
+  "app_name": "CampusConnect",
+  "campus_name": "Kano Campus",
+  "buildings": [
+    "Gidan Makama",
+    "Emir's Palace",
+    "Murtala Muhammad Library"
+  ],
+  "version": "1.0.0"
+}
