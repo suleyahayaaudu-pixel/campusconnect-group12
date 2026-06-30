@@ -1,99 +1,221 @@
 # CampusConnect
 
-> A cross-platform campus services application developed using Flutter for the CSE 413 Mobile Application Development course.
+## CSE 413 – Mobile Application Development (Android/iOS)
+
+CampusConnect is a mobile application developed by **Group 12** of the Department of Software Engineering, Federal University Dutse, as part of the requirements for the **CSE 413 Mobile Application Development (Android/iOS)** course.
+
+The application was developed using Flutter to demonstrate the practical implementation of cross-platform mobile application development. The project integrates several campus services into a single application to improve communication, information sharing, and access to important student services.
 
 ---
 
-## 📚 Course Information
+# Project Information
 
-- **Course:** CSE 413 – Mobile Application Development (Android/iOS)
-- **Institution:** Federal University Dutse
-- **Department:** Software Engineering
-- **Group:** 12
+**Project Title:** CampusConnect
 
----
+**Course:** CSE 413 – Mobile Application Development (Android/iOS)
 
-## 📖 Project Overview
+**Department:** Software Engineering
 
-CampusConnect is a mobile application designed to improve communication and service delivery within a university campus. The application integrates several campus services into a single platform, providing students with an easy-to-use interface for communication, scheduling, attendance, notifications, and other campus-related activities.
+**Institution:** Federal University Dutse
 
----
+**Academic Session:** 2025/2026
 
-## ✨ Features
-
-- 🔐 User Authentication
-- 💬 Real-time Messaging
-- 📍 Location Services
-- 🔔 Push Notifications
-- 📅 Smart Scheduling
-- 🛒 Campus Marketplace
-- ✅ Attendance Management
-- 💾 Offline Data Support (SQLite)
-- 🌐 REST API Integration
+**Group:** 12
 
 ---
 
-## 🛠 Technologies Used
+# Group Members
 
-- Flutter
-- Dart
-- Firebase Authentication
-- Cloud Firestore
-- Firebase Cloud Messaging
-- SQLite (sqflite)
-- Provider State Management
-- Google Maps Flutter
-- HTTP REST API
+| Name | Registration Number |
+|------|----------------------|
+| Yahaya Sule Audu | FCP/CSE/23/2009 |
+| Habibu Adamu Muhammad | FCP/CSE/22/1024 |
+| Yusuf Sulaiman Imam | FCP/CSE/22/1071 |
 
 ---
 
-## 📁 Project Structure
+# Project Overview
+
+CampusConnect provides a centralized platform where students can access different campus services from one application instead of using multiple independent systems.
+
+The application demonstrates the implementation of authentication, messaging, notifications, scheduling, attendance management, marketplace services, offline data storage, location services, and REST API communication using Flutter.
+
+The project also demonstrates state management, cloud integration, local database management, responsive interface design, and modular application development.
+
+---
+
+# Objectives
+
+The objectives of this project include:
+
+- Develop a cross-platform mobile application using Flutter.
+- Demonstrate Firebase Authentication.
+- Implement cloud database integration using Cloud Firestore.
+- Demonstrate local data storage using SQLite.
+- Implement REST API communication.
+- Demonstrate Provider state management.
+- Build a modular application architecture.
+- Design a responsive and user-friendly interface.
+- Provide offline support.
+- Demonstrate Android and Web deployment.
+
+---
+
+# Features
+
+The application currently includes the following modules:
+
+## Authentication
+
+- User login
+- Authentication interface
+- Session management
+
+## Dashboard
+
+- Central navigation page
+- Quick access cards
+- Responsive design
+
+## Messaging
+
+- Chat interface
+- Message sending
+- Typing indicator
+- Read status
+
+## Notifications
+
+- Campus announcements
+- Notification display
+- Alert management
+
+## Smart Scheduling
+
+- Timetable display
+- Academic schedule
+- Upcoming activities
+
+## Marketplace
+
+- Product listing
+- Marketplace interface
+- Campus items
+
+## Attendance
+
+- Attendance records
+- Attendance status
+- Student attendance management
+
+## Offline Support
+
+- Local SQLite database
+- Cached records
+- Offline storage
+
+## API Services
+
+- HTTP communication
+- REST API integration
+- Data retrieval
+
+## Location Services
+
+- Campus location
+- Google Maps support
+- Navigation interface
+
+---
+
+# Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| Flutter | Cross-platform development |
+| Dart | Programming language |
+| Firebase Authentication | User authentication |
+| Cloud Firestore | Cloud database |
+| SQLite (sqflite) | Offline storage |
+| Provider | State management |
+| HTTP | REST API communication |
+| Flutter Local Notifications | Notification services |
+| Google Maps Flutter | Location services |
+| Connectivity Plus | Network monitoring |
+
+---
+
+# Project Structure
 
 ```
 lib/
 │
+├── assets/
 ├── config/
+├── models/
 ├── providers/
 ├── screens/
+│   ├── api/
+│   ├── attendance/
 │   ├── auth/
 │   ├── home/
+│   ├── location/
+│   ├── marketplace/
 │   ├── messaging/
 │   ├── notifications/
-│   ├── scheduling/
-│   ├── marketplace/
-│   ├── attendance/
 │   ├── offline/
-│   ├── api/
-│   └── location/
+│   └── scheduling/
 │
 ├── services/
-├── models/
-└── assets/
+└── main.dart
 ```
 
 ---
 
-## ⚙️ Installation
+# System Architecture
 
-Clone the repository:
+The application follows a modular architecture.
+
+```
+Flutter UI
+      │
+Provider
+      │
+───────────────
+Firebase
+SQLite
+REST API
+```
+
+Firebase handles authentication and cloud data.
+
+SQLite is used for local offline storage.
+
+REST API is used for backend communication.
+
+---
+
+# Installation
+
+Clone the repository.
 
 ```bash
 git clone https://github.com/suleyahayaaudu-pixel/campusconnect-group12.git
 ```
 
-Navigate into the project:
+Move into the project directory.
 
 ```bash
 cd campusconnect-group12
 ```
 
-Install dependencies:
+Install dependencies.
 
 ```bash
 flutter pub get
 ```
 
-Run the application:
+Run the application.
 
 ```bash
 flutter run
@@ -101,87 +223,61 @@ flutter run
 
 ---
 
-## 📱 Modules
+# Screenshots
 
-- Authentication
-- Home Dashboard
+The application includes the following interfaces:
+
+- Login Screen
+- Dashboard
 - Messaging
 - Notifications
-- Smart Scheduling
+- Scheduling
 - Marketplace
 - Attendance
 - Offline Support
 - API Services
 - Location Services
 
----
-
-## 🗄 Backend
-
-- Firebase Authentication
-- Cloud Firestore
-- Firebase Cloud Messaging
+Sample screenshots are included in the project documentation.
 
 ---
 
-## 💾 Local Database
+# Challenges Encountered
 
-SQLite (sqflite) is used for:
+During the development of this project, several challenges were encountered, including:
 
-- Offline caching
-- Local storage
-- Pending synchronization
+- Firebase configuration.
+- Android emulator setup.
+- SQLite compatibility with Flutter Web.
+- Runtime configuration validation.
+- GitHub repository synchronization.
 
----
-
-## 📌 Configuration
-
-This project includes:
-
-- Group-specific configuration
-- Runtime verification
-- Campus code validation
-- API path validation
+These issues were resolved through testing, debugging, and project configuration updates.
 
 ---
 
-## 📷 Screenshots
+# Future Improvements
 
-Add screenshots here after capturing the application.
+Possible future improvements include:
 
-Example:
-
-- Login Screen
-- Dashboard
-- Messaging
-- Marketplace
-- Attendance
-- Scheduling
-- Notifications
-- Offline Support
+- Complete Google Maps navigation.
+- Push notification support.
+- QR Code attendance.
+- Student profile management.
+- Course registration.
+- Timetable synchronization.
+- Online payment integration.
 
 ---
 
-## 🚀 Future Improvements
+# Repository
 
-- Complete Google Maps integration
-- Enhanced push notifications
-- Dark mode
-- Advanced analytics
-- Cloud synchronization improvements
+GitHub Repository:
+
+https://github.com/suleyahayaaudu-pixel/campusconnect-group12
 
 ---
 
-## 👨‍💻 Developed By
+# License
 
-**Group 12**
-
-Department of Software Engineering
-
-Federal University Dutse
-
----
-
-## 📄 License
-
-This project was developed solely for academic purposes as part of the CSE 413 Mobile Application Development course.
+This project was developed strictly for academic purposes as part of the CSE 413 Mobile Application Development course offered by the Department of Software Engineering, Federal University Dutse.
